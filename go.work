@@ -2,7 +2,19 @@ go 1.19
 
 use (
 	"./Day 1- Installation/Hello"
+	"./Day 10-If-else/ifelse"
+	"./Day 11-switchcase/switchCase"
+	"./Day 12-ForLoop/forloops"
+	"./Day 13-Functions/functions"
+	"./Day 14-Methods/methods"
+	"./Day 15-Defer/defer"
+	"./Day 16-WorkingWithFiles/files"
 	"./Day 2- Variables/Variables"
 	"./Day 3-UserInput and Conversions/conversions"
 	"./Day 3-UserInput and Conversions/userInput"
+	"./Day 4-Time/time"
+	"./Day 5-Pointers/pointers"
+	"./Day 6-Arrays/arrays"
+	"./Day 7-Slices/slices"
+	"./Day 8-Maps/maps"
 )
