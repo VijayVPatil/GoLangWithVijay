@@ -9,6 +9,8 @@ use (
 	"./Day 14-Methods/methods"
 	"./Day 15-Defer/defer"
 	"./Day 16-WorkingWithFiles/files"
+	"./Day 17-HandlingWebRequest/getRequest"
+	"./Day 18-HandlingURL/handleUrl"
 	"./Day 2- Variables/Variables"
 	"./Day 3-UserInput and Conversions/conversions"
 	"./Day 3-UserInput and Conversions/userInput"
