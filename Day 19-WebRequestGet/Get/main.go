@@ -16,11 +16,11 @@ func PerformGetRequest() {
 	const MYURL = "http://localhost:8000/get"
 
 	response, err := http.Get(MYURL)
-	defer response.Body.Close()
 
 	if err != nil {
 		panic(err)
 	}
+	defer response.Body.Close()
 
 	fmt.Println(response)
 	fmt.Println("Status Code: ", response.StatusCode)
