@@ -8,14 +8,11 @@ import (
 )
 
 func main() {
-
 	//Web Request
-
 	PerformGetRequest()
 }
 
 func PerformGetRequest() {
-
 	const MYURL = "http://localhost:8000/get"
 
 	response, err := http.Get(MYURL)
@@ -34,7 +31,6 @@ func PerformGetRequest() {
 	if err != nil {
 		panic(err)
 	}
-
 	// fmt.Println(result)
 
 	//Converting Byte to String Way 1
