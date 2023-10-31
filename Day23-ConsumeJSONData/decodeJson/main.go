@@ -37,4 +37,14 @@ func DecodeJSON() {
 	} else {
 		fmt.Println("Json is not value")
 	}
+
+	// Some Cases where you just want to add data to key value
+
+	var myData map[string]interface{}
+	json.Unmarshal(jsonDataFromWeb, &myData)
+	fmt.Printf("%#v\n", myData)
+
+	for k, v := range myData {
+		fmt.Printf("The Key is %v and Value is %v\n", k, v)
+	}
 }

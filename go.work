@@ -11,6 +11,7 @@ use (
 	"./Day 16-WorkingWithFiles/files"
 	"./Day 17-HandlingWebRequest/getRequest"
 	"./Day 18-HandlingURL/handleUrl"
+	"./Day 19-WebRequestGet/Get"
 	"./Day 2- Variables/Variables"
 	"./Day 3-UserInput and Conversions/conversions"
 	"./Day 3-UserInput and Conversions/userInput"
@@ -19,4 +20,9 @@ use (
 	"./Day 6-Arrays/arrays"
 	"./Day 7-Slices/slices"
 	"./Day 8-Maps/maps"
+	./Day20-WebRequestPost/post
+	./Day21-WebFormData/formData
+	./Day22-CreateJSONData/json
+	./Day23-ConsumeJSONData/decodeJson
+	./Day24-GoMod/module
 )
