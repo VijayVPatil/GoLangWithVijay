@@ -9,6 +9,10 @@ func main() {
 	var username string = "Vijay"
 	fmt.Printf("Variable is of type: %T\n", username) // We use Printf
 
+	//Below is how we declare using short hand operator(:=)
+	name1 := "Vijay"
+	fmt.Println("The name is ", name1)
+
 	//Boolean
 	var isThisBoolean bool = true
 	fmt.Printf("Variable is of type: %T\n", isThisBoolean)

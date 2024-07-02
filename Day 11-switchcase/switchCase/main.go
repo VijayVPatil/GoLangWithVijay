@@ -1,16 +1,11 @@
 package main
 
-import (
-	"fmt"
-	"math/rand"
-	"time"
-)
+import "fmt"
 
 func main() {
 	//Switch Case in Golang
 
-	rand.Seed(time.Now().UnixNano())
-	diceNumber := rand.Intn(6) + 1
+	diceNumber := 1
 
 	fmt.Println("Value of Dice is ", diceNumber)
 

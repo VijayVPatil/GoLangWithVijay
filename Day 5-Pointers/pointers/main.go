@@ -14,4 +14,9 @@ func main() {
 	value := *nos1
 	fmt.Println("The Address is :", nos1)
 	fmt.Println("The Value is :", value)
+
+	var m = "Vijay"
+	n := &m
+
+	fmt.Printf("The value %v and the type %T ", n, n)
 }
