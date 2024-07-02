@@ -39,7 +39,7 @@ https://code.visualstudio.com/download
 
 5) Now lets go write the simple go hello world program.
 6) Install Go Extensions
-![image](https://github.com/VijayVPatil/GoLangWithVijay/assets/76161912/bb352bae-7042-4dcf-871d-8168309dcedd)
+![image](https://github.com/VijayVPatil/GoLangWithVijay/assets/76161912/bb352bae-7042-4dcf-871d-8168309dcedd) 
 7)Now we need a extension just to make our lives little easier   
 Go to Extensions -> Go(By Go team at google). Click on install.    
 After the installation is complete, open the command palette by pressing Ctrl + Shift + p     
