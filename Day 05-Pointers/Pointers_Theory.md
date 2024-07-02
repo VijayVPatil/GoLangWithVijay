@@ -72,7 +72,7 @@ nos1 := &nos
 We can also have a pointer to a memory location stored in a variable.
 Let's breakdown the code below.
 
-We have a variable a
+We have a variable 'a' where alue 32 is stored. We store the address of 'a' in variable 'b'. Now the address of 'b' that is of inter pointer type is stored in 'c' . Checkout the formatted print statement to check how it is dereferenced. 
 
 ```
 
