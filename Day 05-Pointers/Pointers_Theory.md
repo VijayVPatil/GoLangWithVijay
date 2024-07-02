@@ -3,8 +3,6 @@
 We use pointers in golang to store the memory address of a type.
 Pointers are stored in hexadecimal format
 
-https://media.geeksforgeeks.org/wp-content/uploads/20190705160332/Pointers-in-Golang.jpg
-
 ### Pointer declaration
 
 Let's see how we can declare a pointer
