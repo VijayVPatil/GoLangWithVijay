@@ -13,14 +13,14 @@ use (
 	"./Day 18-HandlingURL/handleUrl"
 	"./Day 19-WebRequestGet/Get"
 	"./Day 02- Variables/Variables"
-	"./Day 3-UserInput and Conversions/conversions"
-	"./Day 3-UserInput and Conversions/userInput"
-	"./Day 5-Pointers/pointers"
-	"./Day 6-Arrays/arrays"
-	"./Day 8-Maps/maps"
-	./Day20-WebRequestPost/post
-	./Day21-WebFormData/formData
-	./Day22-CreateJSONData/json
-	./Day23-ConsumeJSONData/decodeJson
-	./Day24-GoMod/module
+	"./Day 03-UserInput and Conversions/conversions"
+	"./Day 03-UserInput and Conversions/userInput"
+	"./Day 05-Pointers/pointers"
+	"./Day 06-Arrays/arrays"
+	"./Day 08-Maps/maps"
+	"./Day 20-WebRequestPost/post"
+	"./Day 21-WebFormData/formData"
+	"./Day 22-CreateJSONData/json"
+	"./Day 23-ConsumeJSONData/decodeJson"
+	"./Day 24-GoMod/module"
 )
