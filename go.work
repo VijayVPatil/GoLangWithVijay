@@ -1,7 +1,7 @@
 go 1.19
 
 use (
-	"./Day 1- Installation/Hello"
+	"./Day 01- Installation/Hello"
 	"./Day 10-If-else/ifelse"
 	"./Day 11-switchcase/switchCase"
 	"./Day 12-ForLoop/forloops"
@@ -12,7 +12,7 @@ use (
 	"./Day 17-HandlingWebRequest/getRequest"
 	"./Day 18-HandlingURL/handleUrl"
 	"./Day 19-WebRequestGet/Get"
-	"./Day 2- Variables/Variables"
+	"./Day 02- Variables/Variables"
 	"./Day 3-UserInput and Conversions/conversions"
 	"./Day 3-UserInput and Conversions/userInput"
 	"./Day 5-Pointers/pointers"
