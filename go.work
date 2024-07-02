@@ -22,5 +22,4 @@ use (
 	"./Day 21-WebFormData/formData"
 	"./Day 22-CreateJSONData/json"
 	"./Day 23-ConsumeJSONData/decodeJson"
-	"./Day 24-GoMod/module"
 )
