@@ -8,6 +8,7 @@ var number int
 var temperature float64=75.4566
 
 Example Code :
+```
 package main 
 
 import "fmt" 
@@ -17,7 +18,7 @@ var b string=12
 func main() { 
 fmt.Println("Hello World!!!!") 
 } 
- 
+ ```
 ### Short Assignment operator (Type Inference):
 
 Inside a function (even the main function), the := short assignment statement can be used in place of a var declaration. The := operator infers the type of the new variable based on the value.  
