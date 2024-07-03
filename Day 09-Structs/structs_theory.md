@@ -3,6 +3,8 @@
 1. Struct in golang is a composition of different simpler types like int, float64/float32 , string etc .
 2. It is a user defined type.
 
+##### Note : All the concepts mentioned here , the code for this is available in Day 09-Structs/structs_bascis
+
 #### Declaration
 
 Structs are declared as below
@@ -101,11 +103,13 @@ We can also store the address of the structure in a variable
 
 ```
     empAdd := &emp1
-	fmt.Println("The emp1 id is ", (*empAdd).empId, "and emp1 name is ", (*empAdd).empName)
+	fmt.Println("The emp1 id using dereferencing operator is ", (*empAdd).empId, "and emp1 name using dereferencing operator is ", (*empAdd).empName)
 
 	fmt.Println("The emp1 id is ", empAdd.empId, "and emp1 name is ", empAdd.empName)
 
-    fmt.Printf(""The type of pointer to the structure is %T\n",empAdd)
+    fmt.Printf("The type of pointer to the structure is %T\n",empAdd)
 ```
 
-The address
+In above example the address to the instance(emp1) of structure is stored in empAdd. We can access the fields of
+structure using the dereference pointer(*) as shown as (*empAdd).empId , (\*empAdd).empName
+Golang gives us a provision to directly use 'empAdd' instead of dereferencing it as seen in the example above
