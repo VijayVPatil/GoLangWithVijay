@@ -31,6 +31,7 @@ Above should give the version of go installed with the Operating System installe
 
 I would prefer VS Code as my IDE
 
+Install based upon your operating system 
 https://code.visualstudio.com/download
 
 ### Let's Write a basic Hello World Program
@@ -66,6 +67,7 @@ func main() {
 }
 ```
 
+### Code walkthrough
 1. The first line is where we defined the package of which the code is part.
 2. Next, we import the built-in package "fmt" or format .fmt is a Go package that is used to format basic strings, values, inputs, and outputs. It can also be used to print and write from the terminal.
 3. Next, we need to give a start point to go to start code execution . Hence the execution in go starts from the main function. One go program has only one main function.
