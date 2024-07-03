@@ -8,11 +8,18 @@ Pointers are stored in hexadecimal format
 Let's see how we can declare a pointer
 
 ```
+package main
+
+import "fmt"
+
 var memOne *int
 
+//Following will print <nil> as zero value of pointer type is <nil>
+fmt.Println("The memOne is ",memOne)
 ```
 
-Here we are declaring integer pointer type with name argument 'memOne'. This will store address.
+Here we are declaring integer pointer type with name argument 'memOne'. This will store address. 
+The zero value of a pointer type variabe is 'nil'  
 
 #### Extract address of a type
 
@@ -33,7 +40,7 @@ fmt.Println("Address of num1 is ",num1Address)
 
 #### Declaring Pointers using short hand declaration
 
-We can use short hand operator(:=) to declare a variable 'dig1' of pointer type . For sanity check let see what will be the type of the variable 'dig1'
+We can use short hand operator(:=) to declare a variable 'dig1' of pointer type . We do not need to mention the pointer type while declaring the variable . The type of pointer variable is inferred by the compiler .For sanity check let see what will be the type of the variable 'dig1'
 
 ```
 package main
