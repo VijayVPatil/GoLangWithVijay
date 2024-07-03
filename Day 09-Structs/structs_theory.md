@@ -1,6 +1,6 @@
 # STRUCT in Golang
 
-1. Struct in golang is a composition of different simpler types like int, float64/float32 , string etc .
+1. Struct in golang is a collection of different simpler types like int, float64/float32 , string etc .
 2. It is a user defined type.
 
 ##### Note : All the concepts mentioned here , the code for this is available in Day 09-Structs/structs_bascis
