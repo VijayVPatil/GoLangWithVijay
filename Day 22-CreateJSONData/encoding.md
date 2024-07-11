@@ -155,3 +155,8 @@ func main() {
 }
 
 ```
+
+## Note:
+
+1. JSON objects only support strings as keys; to encode a Go map type it must be of the form map[string]T (where T is any Go type supported by the json package).
+2. The json package only accesses the exported fields of struct types (those that begin with an uppercase letter). Therefore only the exported fields of a struct will be present in the JSON output.
