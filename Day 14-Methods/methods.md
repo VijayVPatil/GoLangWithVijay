@@ -1,3 +1,23 @@
+# Methods in Golang
+
+1. In Golang , methods are similar to function , it has a name , takes arguments as input and also return value. But it also comes with a receiver argument.
+2. Methods helps to access the properties of reciever. Reciever can be a struct or non struct type.
+3. When you create a method in your code the receiver and receiver type must be present in the same package.
+
+How to define a method
+
+```
+func(reciever_argument_name  type_of_reciever)method_name(paramters_list)(returns){
+
+}
+
+```
+
+Example :
+
+#### code 1.01
+
+```
 package main
 
 import "fmt"
@@ -58,3 +78,13 @@ func main() {
 	changeNames(&s1, "Jerry")
 	fmt.Println("The struct after changeNames function is called", s1)
 }
+
+
+```
+
+### Explannation of code 1.01
+
+1. We can call the method by using the variable of struct declared
+2. The methods have a reciever argument that can have a struct and non struct type. AS in above example we have a taken a Student struct type.
+3. We can also have a pointer reciver in methods if we want to make direct changes to the struct fields.
+4. We can call a function that takes a argument as pointer to struct and a value. Functions with a pointer argument must take a pointer.
