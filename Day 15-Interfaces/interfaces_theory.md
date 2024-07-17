@@ -130,3 +130,84 @@ Explanation of above (Code 1.01)"
 ### Interfaces under the hood!
 
 1. When we call a method on an interface value, Go uses the type information to let the call to the appropriate method on the underlying type. In code Example code 1.01 ,internally report hold the type information of st2(struct type). When we call report.reading(), Go checks the type information stored in report to find out the underlying type, which is st2. Go then calls the reading() method on the value st2.
+
+#### Interface with underlying nil values
+
+If underlying value of type in interface is nil then the method will be called with nil recivers
+Let's see in below example,
+As seen a pointer to nil(\*Teacher) is assigned to the interface. Here we have handled the nil underlying nil type in the method.
+Hence even if the nil type is assigned to interface , the interface is not said to be nil as it contains pointer to nil
+
+```
+package main
+
+import "fmt"
+
+type Teacher struct {
+	name  string
+	pages int
+}
+
+// Follwing method shows how to handle nil underlying types of interface
+func (t *Teacher) testingNil() {
+	if t == nil {
+		fmt.Println("<nil> underlying type")
+		return
+	}
+	fmt.Println(t.pages)
+}
+
+type Result interface {
+	testingNil()
+}
+
+func main() {
+
+	var report Result
+
+	var t *Teacher
+	report = t
+
+	report.testingNil()
+}
+
+```
+
+#### Empty Interface
+
+In Go, the empty interface, interface{}, is a special type of interface that can hold values of any type. This makes it very versatile and useful in situations where the type of value is not known at compile time.
+
+Empty interface s defined as
+
+```
+type variable_name interface{}
+```
+
+#### Type assertion and type switch
+
+Type assertion: A type assertion in Go is a way to retrieve the underlying concrete value from an interface value. It allows you to access the specific type stored in the interface.
+
+Type switch: A type switch is similar to a regular switch statement but compares types rather than values. It is used to discover the dynamic type of an interface's underlying value and execute code specific to that type.
+
+Type assertion example:
+
+```
+assigned , ok:= i.(T)
+```
+
+where i is the interface and T is the underlying type
+assigned is the variable that stores the underlyting type
+
+Type switch example:
+
+```
+switch v := i.(type) {
+case T:
+    // here v has type T
+case S:
+    // here v has type S
+default:
+    // no match; here v has the same type as i
+}
+
+```
