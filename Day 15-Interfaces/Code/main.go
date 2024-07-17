@@ -20,6 +20,15 @@ func (t *Teacher) reading() int {
 	return t.pages
 }
 
+//Follwing method shows how to handle nil underlying types of interface
+func (t *Teacher) testingNil() {
+	if t == nil {
+		fmt.Println("<nil> underlying type")
+		return
+	}
+	fmt.Println(t.pages)
+}
+
 type thermometer int
 
 func (t thermometer) reading() int {
@@ -39,6 +48,10 @@ func workFunction(r Result) {
 	fmt.Printf("The reading is %v \n", r.reading())
 }
 
+//Below show how we define a empty interface
+type Empty interface {
+}
+
 func main() {
 
 	var report Result
@@ -55,6 +68,7 @@ func main() {
 		pages: 34,
 	}
 
+	//Follwoing show how a interface value store value of different type if the type implements menthods that interface definition have
 	report = th
 	fmt.Println(report.reading())
 
@@ -78,6 +92,25 @@ func main() {
 
 	report = st2
 
-	//Calling a method on an interface value executes the method of the same name on its underlying type.
-	report.reading()
+	//Following is how we declare a empty interface
+	var emp Empty
+	emp = st1
+	emp = te1
+	fmt.Println(emp)
+
+	//Type assertions and type switch example
+	typeSwitch(st1)
+	typeSwitch(te1)
+	typeSwitch(th)
+}
+
+func typeSwitch(i interface{}) {
+	switch v := i.(type) { //i.(type) gives us the underlying type
+	case Student:
+		fmt.Printf("The type is of %v and %T\n", v, v)
+	case Teacher:
+		fmt.Printf("The type is of %v and %T\n", v, v)
+	default:
+		fmt.Printf("The type is of %v and %T\n", v, v)
+	}
 }
