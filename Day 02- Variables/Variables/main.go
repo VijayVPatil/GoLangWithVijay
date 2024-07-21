@@ -9,6 +9,10 @@ func main() {
 	var username string = "Vijay"
 	fmt.Printf("Variable is of type: %T\n", username) // We use Printf
 
+	//Below is how we declare muliple variables at once
+	var b, c int = 1, 2
+	fmt.Println("Multiple variables b and c is declared at once respectively: ", b, c)
+
 	//Below is how we declare using short hand operator(:=)
 	name1 := "Vijay"
 	fmt.Println("The name is ", name1)

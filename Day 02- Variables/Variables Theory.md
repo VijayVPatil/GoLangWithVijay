@@ -1,30 +1,60 @@
 # Variables
 
-Declaring a variable: Variables are declared using the var keyword. We can have variable declaration with var in function level as well as var level . For example, to declare a variable called number of type int, you would write:  
-var <Vairiable_Name> <Data_Type>
+1. Declaring a variable: Variables are declared using the var keyword.
+2. We can have variable declaration with var in function level as well as package level .
+3. For example, to declare a variable called number of type int, you would write:
 
-For ex:  
-var number int  
+```
+var <variable_name> <data_type>
+```
+
+For ex:
+
+```
+var number int
 var temperature float64=75.4566
 
-Example Code :
 ```
-package main 
 
-import "fmt" 
+Example Code :
 
-var a int 
-var b string=12 
-func main() { 
-fmt.Println("Hello World!!!!") 
-} 
- ```
+```
+package main
+
+import "fmt"
+
+var a int
+var b string=12
+func main() {
+fmt.Println("Hello World!!!!")
+}
+```
+
+### You know what, we can omit the type of the variable let's see how
+
+1. We can declare the variable by omitting type if int initalizer is present and the type of the variable will be inferred based on the initalizer if not explicitly specified.
+2. But what is initalizer? an initializer in Go provides the initial value for a variable at the time of its declaration.
+
+```
+//Declare a string type variable
+var name="James"
+```
+
+### We can declare multiple variables at once
+
+```
+   var b, c int = 1, 2
+
+```
+
 ### Short Assignment operator (Type Inference):
 
 Inside a function (even the main function), the := short assignment statement can be used in place of a var declaration. The := operator infers the type of the new variable based on the value.  
 So we were declaring variables as
 
+```
 var empty string
+```
 
 now with short assignment operator
 
@@ -33,14 +63,26 @@ empty:="" …. This is how short assignment operator is used
 #### Crucial Note : When to use Var Keyword and Short Hand Declaration operator?
 
 1. If we want zero value declaration or or just declare the variable and assigned the value in future , use the keyword var
+
+Variables declared without an explicit initial value are given their zero value.
+
+The zero value is:
+
+0 for numeric types,
+false for the boolean type, and
+"" (the empty string) for strings.
+
 2. When variables are to be declared and initialized at same time, use the short variable declaration operator.
 
 ### Another way to declare the variable:
 
-A dynamic type variable declaration requires the compiler to interpret the type of the variable based on the value passed to it. The compiler does not require a variable to have type statically as a necessary requirement.  
-![image](https://github.com/VijayVPatil/GoLangWithVijay/assets/76161912/de7b51ff-c7c4-4894-ae7a-6d58037aebaf)
+A dynamic type variable declaration requires the compiler to interpret the type of the variable based on the value passed to it. The compiler does not require a variable to have type statically as a necessary requirement.
 
-![image](https://github.com/VijayVPatil/GoLangWithVijay/assets/76161912/24c6bca0-f687-4687-a9ba-a2529b0d07e7)
+```
+//Declaring a variable of int type using short hand declaration
+
+i:=1
+```
 
 ### Types
 
@@ -67,43 +109,57 @@ complex128 the set of all complex numbers with float64 real and imaginary parts
 byte alias for uint8  
 rune alias for int32
 
-Examples:(Please refer the code sample attached in repository
-![image](https://github.com/VijayVPatil/GoLangWithVijay/assets/76161912/cd62a4d2-c4b1-45b8-a4fe-ae5b6b694bca)
+Examples: Please refer the code sample attached in repository
 
-![image](https://github.com/VijayVPatil/GoLangWithVijay/assets/76161912/5af2baa4-d040-4b3c-af45-782a47695e9c)
+##### Integer Type
 
-#### String Type
+##### String Type
 
 A string type represents the set of string values.
 Below is how we declare string
 
-![image](https://github.com/VijayVPatil/GoLangWithVijay/assets/76161912/c701225c-8c6b-46ea-a8cb-fb4f99bebbe4)
+```
+//Using var keyword
+var name string="Jane"
 
-![image](https://github.com/VijayVPatil/GoLangWithVijay/assets/76161912/3cb89443-83e2-42ff-9014-529cc3eb6e5e)
+//Using short hand declaration
+address:="Street 5 , NYC"
+
+```
 
 #### Boolean Type
 
 A boolean type represents the set of Boolean truth values denoted by the predeclared constants true and false. The predeclared boolean type is bool; it is a defined type.
 
-![image](https://github.com/VijayVPatil/GoLangWithVijay/assets/76161912/2d0ef683-6a6d-44ee-959a-1928780c7174)
+```
+//Using short hand declaration
+isBoll:=true
 
-![image](https://github.com/VijayVPatil/GoLangWithVijay/assets/76161912/c389fec3-a150-4f50-b816-78942c04ffde)
+//Using Var keyword
+var isThisBoolean bool = true
+```
+
+#### Rune type
 
 ### Go Constants
 
 If a variable should have a fixed value that cannot be changed, you can use the const keyword.  
 The const keyword declares the variable as "constant", which means that it is unchangeable and read-only. Which means when constant is declared it can not be changed later
 
-Rules:-  
-1)Constant names follow the same naming rules as variables
-2)Constant names are usually written in uppercase letters (for easy identification and differentiation from variables)
-3)Constants can be declared both inside and outside of a function
+Rules:-
+
+1. Constant names follow the same naming rules as variables
+2. Constant names are usually written in uppercase letters (for easy identification and differentiation from variables)
+3. Constants can be declared both inside and outside of a function
 
 Types Constants: Constants declared with Type
-Const ABC int=1
+
+```
+const ABC int=1
+```
 
 Untyped Constants: Declared without type
 
-![image](https://github.com/VijayVPatil/GoLangWithVijay/assets/76161912/7a16a5c5-a952-4cf3-95d1-767b77b01bd7)
-
-![image](https://github.com/VijayVPatil/GoLangWithVijay/assets/76161912/cc4f74d0-633d-4736-b01a-a2d58a1e4b5d)
+```
+const DEF="Navy"
+```
