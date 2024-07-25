@@ -13,10 +13,12 @@ type Employee struct {
 
 func main() {
 	//Structs
+	//Declaring Structs
 	var emp1 Employee
 
 	fmt.Println("The zero value of above struct instance", emp1)
 
+	//Initalizing Structs
 	emp1 = Employee{
 		empId:   3444,
 		empName: "Vijay",
@@ -27,8 +29,12 @@ func main() {
 	// Accessing fields of struct using '.' operator
 	fmt.Printf("Empoyee Id is : %v ,Employee Name is %v\n", emp1.empId, emp1.empName)
 
-	//Pointer to a struct
+	//Pointer to structs
+	var varAddress *Employee
+	varAddress = &emp1
+	fmt.Println(varAddress.empId, varAddress.empName)
 
+	//Pointer to a struct using short hand operator
 	empAdd := &emp1
 
 	///Accessing the fields to emp1 using empAdd by dereferencing

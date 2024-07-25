@@ -113,3 +113,28 @@ We can also store the address of the structure in a variable
 In above example the address to the instance(emp1) of structure is stored in empAdd. We can access the fields of
 structure using the dereference pointer(*) as shown as (*empAdd).empId , (\*empAdd).empName
 Golang gives us a provision to directly use 'empAdd' instead of dereferencing it as seen in the example above
+
+### Embedded Structs
+
+In Embedded Structs you can use the fields and methods defined for one struct inside another.
+
+```
+type a1 struct{
+    var_name var_type
+    .
+    .
+    .
+}
+
+type a2 struct{
+    a1
+    var_name var_type
+    .
+    .
+    .
+}
+
+```
+
+Here var_name is any variable name and var_type is var_type is variable type
+Code example for this can be found in Structs_Embedded folder
