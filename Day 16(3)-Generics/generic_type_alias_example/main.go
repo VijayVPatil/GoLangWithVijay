@@ -16,8 +16,6 @@ func addTypes[T int | float64](a, b T) T {
 
 func main() {
 
-    type def
-
 	fmt.Println(addInt(2, 3))
 	fmt.Println(addFloat(2.2, 3.3))
 
