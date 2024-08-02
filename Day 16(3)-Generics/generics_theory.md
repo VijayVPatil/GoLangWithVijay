@@ -40,11 +40,14 @@ Above we had added a additional square bracket where we specify the type our gen
 Add below generic function in your code
 
 ```
-func addTypes[T any](a, b T) T {
-	return a + b
+func valueTypes[T any](value T) T {
+	return value
 }
 
 ```
+
+1. Above generic function will take any type
+2. Please refer Day 16(3)-Generics\generics_basic_example
 
 ### Generics with type constraint.
 
@@ -57,5 +60,20 @@ func addTypes[T int | float64](a, b T) T {
 
 ```
 
-1. Above generic function will take either int or float hence it is type constraint
-2. Please refer Day 16(3)-Generics\generics_basic_example
+1. Above generic function will take either int or float hence it is type constraint.
+2. Please refer Day 16(3)-Generics\generics_type_constraint_example
+
+### Generic function with type constraint and type set interface
+
+dd below generic function with type constraint in your code
+
+```
+func addTypes[T numbersOperation](a, b T) T {
+	return a + b
+}
+
+```
+
+1. In this example, 'numbersOperation' is a type constraint that specifies 'T' must be either int or float64. The Add function takes two parameters of type 'T' and returns their sum.
+
+### Generics with type alias and underlying type constraints

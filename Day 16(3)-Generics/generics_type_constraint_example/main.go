@@ -18,7 +18,7 @@ func main() {
 	fmt.Println(addInt(2, 3))
 	fmt.Println(addFloat(2.2, 3.3))
 
-	//Below is using a generic function
+	//Below is using a generic function with type constraint
 
 	fmt.Println(addTypes(2, 3))
 	fmt.Println(addTypes(2.2, 3.3))
