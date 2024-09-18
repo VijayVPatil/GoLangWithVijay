@@ -1,25 +1,25 @@
 ### Let's GO
 
-Go is a procedural programming language. It was developed in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson at Google but launched in 2009 as an open-source programming language.
-Go lang is strong and statically typed, meaning variables can only have a single type. It is also a concurrent, and garbage-collected programming language.
-It is designed to be simple, efficient, and easy to learn, making it a popular choice for building scalable network services, web applications, and command-line tools.
-Go Lang, is compiled language which means a go code (main.go) is first compiled into an executable file (main.exe) using a compiler. Go has a fast compiler, which makes it easy to iterate quickly during development.
+1. Go is a procedural programming language. It was developed in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson at Google but    launched in 2009 as an open-source programming language.
+2. Go lang is strong and statically typed, meaning variables can only have a single type. It is also a concurrent, and  garbage-collected programming language.
+3. It is designed to be simple, efficient, and easy to learn, making it a popular choice for building scalable network services, web  applications, and command-line tools.
+4. Go Lang, is compiled language which means a go code (main.go) is first compiled into an executable file (main.exe) using a compiler. Go has a fast compiler, which makes it easy to iterate quickly during development.
 
 ### Why Go?
 
-The infrastructure has evolved over the last decade. Multi-core processors were becoming common and the use of cloud servers with thousands of servers and multiple processors was becoming a norm to deploy applications.
+1. The infrastructure has evolved over the last decade. Multi-core processors were becoming common and the use of cloud servers with thousands of servers and multiple processors was becoming a norm to deploy applications.
 Here most of the applications failed to take benefit from this infrastructure advancement. Applications were only able to execute one task at a time but infrastructure could enable it.
-Now many languages like Java, and C++ had features like concurrency and multithreading, but code could get pretty complicated. This is where Go comes into the picture as it is built while keeping in mind the above needs.
-Go was designed to run on multiple cores and built to support concurrency.
+2. Now many languages like Java, and C++ had features like concurrency and multithreading, but code could get pretty complicated. This is where Go comes into the picture as it is built while keeping in mind the above needs.
+3. Go was designed to run on multiple cores and built to support concurrency.
 
 ### Installation
 
-Get you latest version of Go Lang according to your operating system
+1. Get you latest version of Go Lang according to your operating system
 
 https://go.dev/doc/install
 
-Click on the installed package . Go with the default settings and install.
-After this run the below command in command prompt to check if go is installed or not.
+2. Click on the installed package . Go with the default settings and install. 
+   After this run the below command in command prompt to check if go is installed or not.
 
 ```
 ~ go version
@@ -76,10 +76,15 @@ func main() {
 ###### But what is the go mod init command that we ran?
 
 In golang , as we seen above we imported the Println function from the fmt package. Now comes from the standard library, but when we want to import the packages from other module such as ex: Gorilla Mux(Routing Package used for backend API) we need to manage these dependencies using our own module and we do that by go.mod file . It helps us in tracking the dependencies.
-You and me will lear more about this in future sections.
+You and me will learn more about this in future sections.
 
 Now to run this go program, right click on the main.go file that you made and choose open in integrated terminal, just run the command  
-go run main.go and should get the output like below
+
+```
+go run main.go 
+```
+
+and should get the output like below
 
 ```
 Hello World!!!!
