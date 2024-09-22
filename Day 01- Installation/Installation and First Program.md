@@ -89,3 +89,20 @@ and should get the output like below
 ```
 Hello World!!!!
 ```
+
+
+### Building the Go code
+
+There can be a need to build the go code in binaries , this can be done by using below command  
+
+```
+go build <file_name.go>
+```
+
+we get a executable file
+
+### We can execute the binary/executable file directly
+
+```
+./file_name
+```
