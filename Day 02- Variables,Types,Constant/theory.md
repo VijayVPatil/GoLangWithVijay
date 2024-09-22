@@ -49,34 +49,35 @@ var name="James"
 
 ### Short Assignment operator (Type Inference):
 
-Inside a function (even the main function), the := short assignment statement can be used in place of a var declaration. The := operator infers the type of the new variable based on the value.  
-So we were declaring variables as
+1. Inside a function (even the main function), the := short assignment statement can be used in place of a var declaration. The :=    operator infers the type of the new variable based on the value.  
+2. So we were declaring variables as
 
 ```
 var empty string
 ```
 
-now with short assignment operator
+3. now with short assignment operator 
 
 empty:="" …. This is how short assignment operator is used
+
+4. The := syntax is shorthand for declaring and initializing a variable can be used only inside functions 
 
 #### Crucial Note : When to use Var Keyword and Short Hand Declaration operator?
 
 1. If we want zero value declaration or or just declare the variable and assigned the value in future , use the keyword var
-
-Variables declared without an explicit initial value are given their zero value.
+   Variables declared without an explicit initial value are given their zero value.
 
 The zero value is:
 
 0 for numeric types,
 false for the boolean type, and
 "" (the empty string) for strings.
-
-2. When variables are to be declared and initialized at same time, use the short variable declaration operator.
+   
+2. When variables are to be declared and initialized at same time, use the short variable declaration operator.    
 
 ### Another way to declare the variable:
 
-A dynamic type variable declaration requires the compiler to interpret the type of the variable based on the value passed to it. The compiler does not require a variable to have type statically as a necessary requirement.
+A dynamic type variable declaration requires the compiler to interpret the type of the variable based on the value passed to it. The  compiler does not require a variable to have type statically as a necessary requirement.  
 
 ```
 //Declaring a variable of int type using short hand declaration
@@ -112,6 +113,8 @@ rune alias for int32
 Examples: Please refer the code sample attached in repository
 
 ##### Integer Type
+
+Please check the code repository "Day 02-Variable,Types,Constants/code/main.go"
 
 ##### String Type
 
