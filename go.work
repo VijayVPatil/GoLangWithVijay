@@ -12,7 +12,6 @@ use (
 	"./Day 17-HandlingWebRequest/getRequest"
 	"./Day 18-HandlingURL/handleUrl"
 	"./Day 19-WebRequestGet/Get"
-	"./Day 02- Variables/Variables"
 	"./Day 03-UserInput and Conversions/conversions"
 	"./Day 03-UserInput and Conversions/userInput"
 	"./Day 05-Pointers/pointers"
