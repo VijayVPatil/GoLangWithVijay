@@ -2,9 +2,9 @@ go 1.19
 
 use (
 	"./Day 01- Installation/Hello"
-	"./Day 10-If-else/ifelse"
-	"./Day 11-switchcase/switchCase"
-	"./Day 12-ForLoop/forloops"
+	"./Day 06-If-else/ifelse"
+	"./Day 07-switchcase/switchCase"
+	"./Day 08-ForLoop/forloops"
 	"./Day 13-Functions/functions"
 	"./Day 14-Methods/methods"
 	"./Day 16(1)-Defer/defer"
@@ -15,8 +15,8 @@ use (
 	"./Day 03-UserInput and Conversions/conversions"
 	"./Day 03-UserInput and Conversions/userInput"
 	"./Day 05-Pointers/pointers"
-	"./Day 06-Arrays/arrays"
-	"./Day 08-Maps/maps"
+	"./Day 09-Arrays/arrays"
+	"./Day 12-Maps/maps_golang"
 	"./Day 20-WebRequestPost/post"
 	"./Day 21-WebFormData/formData"
 	"./Day 22-CreateJSONData/Code"
